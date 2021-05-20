@@ -77,7 +77,7 @@ namespace TestTask
                                 }
                                 //replace repeated countries
                                 cDAnalys.Countries = cDAnalys.Countries.Distinct().ToList();
-                                string _result = JsonConvert.SerializeObject(cDAnalys);
+                                string _result = JsonConvert.SerializeObject(cDAnalys, Newtonsoft.Json.Formatting.Indented);
 
                                 Console.WriteLine("\n");
                                 Console.WriteLine(_result);
@@ -86,6 +86,7 @@ namespace TestTask
                         }
                         else
                         {
+                            
                             Console.WriteLine("Incorrect path");
                         }
 
@@ -130,7 +131,7 @@ namespace TestTask
                         }
                         //replace repeated countries
                         cD_Analys.Countries = cD_Analys.Countries.Distinct().ToList();
-                        string result = JsonConvert.SerializeObject(cD_Analys);
+                        string result = JsonConvert.SerializeObject(cD_Analys, Newtonsoft.Json.Formatting.Indented);
 
                         Console.WriteLine("\n");
                         Console.WriteLine(result);
