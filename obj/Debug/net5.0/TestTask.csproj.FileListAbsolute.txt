@@ -16,5 +16,3 @@ C:\Users\user\source\repos\TestTask\TestTask\obj\Debug\net5.0\TestTask.dll
 C:\Users\user\source\repos\TestTask\TestTask\obj\Debug\net5.0\ref\TestTask.dll
 C:\Users\user\source\repos\TestTask\TestTask\obj\Debug\net5.0\TestTask.pdb
 C:\Users\user\source\repos\TestTask\TestTask\obj\Debug\net5.0\TestTask.genruntimeconfig.cache
-C:\Users\user\source\repos\TestTask\TestTask\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
-C:\Users\user\source\repos\TestTask\TestTask\bin\Debug\net5.0\System.IO.Packaging.dll

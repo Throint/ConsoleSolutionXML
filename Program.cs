@@ -42,7 +42,7 @@ namespace TestTask
                                 foreach (var rs in _tmp)
                                 {
                                     //increment every cd
-                                    cDAnalys.cdsCount++;
+                                    cDAnalys.CdsCount++;
                                     //get counntries
                                     cDAnalys.Countries.Add(rs.Element("COUNTRY").Value);
                                     //get price
@@ -100,7 +100,7 @@ namespace TestTask
                         foreach (var rs in tmp)
                         {
 
-                            cD_Analys.cdsCount++;
+                            cD_Analys.CdsCount++;
                             cD_Analys.Countries.Add(rs.Element("COUNTRY").Value);
                             var t = rs.Element("PRICE").Value;
                             var q = t.Replace('.', ',');
@@ -154,7 +154,7 @@ namespace TestTask
 
     public class CD_Analys
     {
-        public int cdsCount { get; set; } = 0;
+        public int CdsCount { get; set; } = 0;
         public decimal PricesSum { get; set; } = 0;
         public List<string> Countries { get; set; } = new List<string>();
         public int MinYear
