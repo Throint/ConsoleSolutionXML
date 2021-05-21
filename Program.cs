@@ -57,21 +57,23 @@ namespace TestTask
 
                                     int curYear;
                                     if (int.TryParse(rs.Element("YEAR").Value, out curYear))
+                                        { 
+                                        
+                                        //get years and compare with saved
+                                        if ((curYear< cDAnalys.MinYear) || (cDAnalys.MinYear == 0))
                                         {
+                                            cDAnalys.MinYear = int.Parse(rs.Element("YEAR").Value);
+                                        }
+
+                                        if ((curYear > cDAnalys.MaxYear) || (cDAnalys.MaxYear == 0))
+                                        {
+                                            cDAnalys.MaxYear = int.Parse(rs.Element("YEAR").Value);
+                                        }
+
 
                                     }
 
-                                    //get years and compare with saved
-                                    if ((curYear< cDAnalys.MinYear) || (cDAnalys.MinYear == 0))
-                                    {
-                                        cDAnalys.MinYear = int.Parse(rs.Element("YEAR").Value);
-                                    }
-
-                                    if ((curYear > cDAnalys.MaxYear) || (cDAnalys.MaxYear == 0))
-                                    {
-                                        cDAnalys.MaxYear = int.Parse(rs.Element("YEAR").Value);
-                                    }
-
+                                  
 
 
                                 }
